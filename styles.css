@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Roboto;
+}
+
+/* navbar styles*/
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 70px;
+    align-items: center;
+    position: sticky;
+    top: 0
+}
+
+.searchbar .logo{
+    display: flex;
+    align-items: center;
+}
+
+.searchbar .logo img{
+    width: 100px;  
+    margin-left: 15px;
+}
+
+.search .form{
+    border: 1px solid #dddddd; 
+    height: 35px;
+}
+.search .input, button{
+    border-radius: 0;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.search .input{
+    width: 500px; 
+}
+
+
+.mainbody{
+    height: 100vh - 70px;
+    display: flex;
+    overflow: hidden;
+}
+
+/* side bar styles*/
+
+.categories{
+    width: 260px;
+    background: red;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.catergory{
+    width: 100%;
+    display: flex;
+    padding: 12px 25px;
+    cursor: pointer;
+}
+
+.catergory :hover{
+    background-color: lightgrey; 
+
+}
+
+.cat-section{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.video-platform{
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.videos{
+    background-color:lightgrey ;
+    height: 100%;
+    width: 100%;
+    padding: 15px 25px;
+    position: relative;
+}  
+
+.videos .videosgrid{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.videos .videosgrid .video{
+    width: calc(25% - 10px);
+    height: 170px;
+    margin-bottom: 40px;
+}
+
+.videos .videosgrid .video .thumbnail{
+    width: 100%;
+    height: 170px;  
+    
+}
+
+.videos .videosgrid .video .thumbnail img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+
+.author{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.author img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.details{
+    display: flex;
+    padding-top: 10px;
+}
+
+.details .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.details .text h3{
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.details .text a{
+    color: inherit;
+    text-decoration: none;
+} 
